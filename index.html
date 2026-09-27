@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VØID // DISTRICT — Technical Streetwear & Archive Apparel</title>
+  <meta name="description" content="Architectural silhouettes and tactical streetwear engineered for the metropolis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='68' font-family='sans-serif' font-weight='900' font-size='56' fill='%23ccff00' text-anchor='middle'>V</text></svg>">
+</head>
+<body>
+
+  <!-- Static Top Announcement Banner -->
+  <div class="top-banner">DROP 004: "CONCRETE PROTOCOLS" NOW LIVE — WORLDWIDE DISPATCH AVAILABLE — LIMITED TO 250 PIECES</div>
+
+  <!-- Header & Navigation (Pure HTML & CSS Mobile Drawer) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">VØID<span class="brand-dot">.</span><span class="brand-tag">DISTRICT</span></a>
+      
+      <!-- Accessible checkbox toggle (visually hidden via CSS, touch-enabled on iOS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      
+      <!-- Backdrop overlay to dismiss menu when tapping outside -->
+      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><label for="nav-toggle"><a href="#home" class="nav-link">Home</a></label></li>
+          <li><label for="nav-toggle"><a href="#shop" class="nav-link">Shop</a></label></li>
+          <li><label for="nav-toggle"><a href="#lookbook" class="nav-link">Lookbook</a></label></li>
+          <li><label for="nav-toggle"><a href="#about" class="nav-link">About</a></label></li>
+          <li><label for="nav-toggle"><a href="#faq" class="nav-link">FAQ</a></label></li>
+          <li><label for="nav-toggle"><a href="#contact" class="nav-link">Contact</a></label></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-button" aria-label="Shopping Cart">BAG <span class="cart-count">02</span></button>
+        <label for="nav-toggle" class="menu-toggle" aria-label="Open navigation menu">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?w=1600&auto=format&fit=crop&q=80" alt="Streetwear model in brutalist urban tunnel" class="hero-image">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <span class="badge badge-accent">ARCHIVE CAPSULE 004</span>
+        <h1 class="hero-title">CONCRETE <span class="title-accent">PROTOCOLS.</span></h1>
+        <p class="hero-desc">Unregulated silhouettes engineered for the metropolis. Heavyweight 480GSM fleece, weather-sealed ripstop membranes, and architectural utility.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">EXPLORE DROP 004 →</a>
+          <a href="#lookbook" class="btn btn-outline">VIEW LOOKBOOK</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs Strip -->
+    <section class="specs-strip" aria-label="Garment specifications">
+      <div class="container specs-grid">
+        <div class="spec-item">
+          <span class="spec-num">// SPEC 01</span>
+          <h3 class="spec-title">480 GSM FLEECE</h3>
+          <p class="spec-desc">Custom high-density organic loopback cotton with pre-shrunk finish.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-num">// SPEC 02</span>
+          <h3 class="spec-title">CORDURA® HYBRID</h3>
+          <p class="spec-desc">High abrasion-resistant panels placed at maximum stress zones.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-num">// SPEC 03</span>
+          <h3 class="spec-title">ZERO RESTOCKS</h3>
+          <p class="spec-desc">Hard-capped 250 units per design. Every garment numbered in archive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid with Pure CSS Category Filter -->
+    <section class="products-section" id="shop">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CURRENT CAPSULE // 004</span>
+          <h2 class="section-title">THE ARCHIVE PIECES</h2>
+        </div>
+
+        <!-- Hidden Radio Inputs for Pure CSS Filter Hack -->
+        <input type="radio" name="cat-filter" id="cat-all" class="filter-radio" checked>
+        <input type="radio" name="cat-filter" id="cat-outerwear" class="filter-radio">
+        <input type="radio" name="cat-filter" id="cat-fleece" class="filter-radio">
+        <input type="radio" name="cat-filter" id="cat-bottoms" class="filter-radio">
+        <input type="radio" name="cat-filter" id="cat-gear" class="filter-radio">
+
+        <!-- Category Filter Labels (Radio Triggers) -->
+        <div class="category-filter">
+          <label for="cat-all" class="filter-btn">ALL PIECES</label>
+          <label for="cat-outerwear" class="filter-btn">OUTERWEAR</label>
+          <label for="cat-fleece" class="filter-btn">FLEECE</label>
+          <label for="cat-bottoms" class="filter-btn">BOTTOMS</label>
+          <label for="cat-gear" class="filter-btn">GEAR</label>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="fleece">
+            <div class="product-image-wrap">
+              <span class="badge badge-accent product-badge">BESTSELLER</span>
+              <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80" alt="Heavy Fleece Hoodie" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <span class="mono-label">FLEECE // 480GSM</span>
+              <h3 class="product-name">V-01 Heavy Fleece Hoodie</h3>
+              <div class="product-price-row"><span class="product-price">$185.00</span><span class="mono-muted">[ 14 LEFT ]</span></div>
+              <button class="btn btn-card" type="button">ADD TO CART +</button>
+            </div>
+          </article>
+          <article class="product-card" data-category="bottoms">
+            <div class="product-image-wrap">
+              <span class="badge product-badge">LIMITED 150</span>
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800&auto=format&fit=crop&q=80" alt="Tactical Cargo Pants" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <span class="mono-label">BOTTOMS // CORDURA®</span>
+              <h3 class="product-name">T-40 Tactical Cargo Pants</h3>
+              <div class="product-price-row"><span class="product-price">$220.00</span><span class="mono-muted">[ 28 LEFT ]</span></div>
+              <button class="btn btn-card" type="button">ADD TO CART +</button>
+            </div>
+          </article>
+          <article class="product-card" data-category="outerwear">
+            <div class="product-image-wrap">
+              <span class="badge badge-accent product-badge">WATERPROOF</span>
+              <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&auto=format&fit=crop&q=80" alt="Modular Bomber Jacket" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <span class="mono-label">OUTERWEAR // RIPSTOP</span>
+              <h3 class="product-name">B-12 Modular Bomber V2</h3>
+              <div class="product-price-row"><span class="product-price">$345.00</span><span class="mono-muted">[ LOW STOCK ]</span></div>
+              <button class="btn btn-card" type="button">ADD TO CART +</button>
+            </div>
+          </article>
+          <article class="product-card" data-category="gear">
+            <div class="product-image-wrap">
+              <span class="badge product-badge">VIBRAM® SOLE</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" alt="Lug Runner Sneaker" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <span class="mono-label">FOOTWEAR // TECHNICAL</span>
+              <h3 class="product-name">C-04 Prototype Lug Runner</h3>
+              <div class="product-price-row"><span class="product-price">$265.00</span><span class="mono-muted">[ 19 LEFT ]</span></div>
+              <button class="btn btn-card" type="button">ADD TO CART +</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lookbook Grid (with Pure CSS Lightbox Overlays) -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">EDITORIAL // ISSUE 04</span>
+          <h2 class="section-title">"CONCRETE PROTOCOLS"</h2>
+        </div>
+        <div class="lookbook-grid">
+          <figure class="look-item">
+            <a href="#look-1" class="look-lightbox-trigger" aria-label="Open full-screen view for Look 01">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900&auto=format&fit=crop&q=80" alt="Editorial Look 01" class="look-image" loading="lazy">
+              <figcaption class="look-details">
+                <span class="mono-label">LOOK 01 // SHIBUYA ↗</span>
+                <h3 class="look-heading">THE MONOLITH OVERCOAT</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="look-item">
+            <a href="#look-2" class="look-lightbox-trigger" aria-label="Open full-screen view for Look 02">
+              <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=900&auto=format&fit=crop&q=80" alt="Editorial Look 02" class="look-image" loading="lazy">
+              <figcaption class="look-details">
+                <span class="mono-label">LOOK 02 // BERLIN U-BAHN ↗</span>
+                <h3 class="look-heading">SUBTERRANEAN DRIFT</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="look-item">
+            <a href="#look-3" class="look-lightbox-trigger" aria-label="Open full-screen view for Look 03">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&auto=format&fit=crop&q=80" alt="Editorial Look 03" class="look-image" loading="lazy">
+              <figcaption class="look-details">
+                <span class="mono-label">LOOK 03 // STUDIO ARCHIVE ↗</span>
+                <h3 class="look-heading">KINETIC DRAPE</h3>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+
+        <!-- Lightbox Overlays (Shown via :target pseudo-class) -->
+        <div id="look-1" class="lightbox">
+          <a href="#lookbook" class="lightbox-backdrop" aria-label="Close lightbox"></a>
+          <div class="lightbox-dialog">
+            <a href="#lookbook" class="lightbox-close" aria-label="Close">✕</a>
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1600&auto=format&fit=crop&q=85" alt="Editorial Look 01 Full View">
+            <div class="lightbox-info">
+              <span class="mono-label">LOOK 01 // SHIBUYA TRANSIT ARTERY</span>
+              <h3 class="look-heading">THE MONOLITH OVERCOAT</h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="look-2" class="lightbox">
+          <a href="#lookbook" class="lightbox-backdrop" aria-label="Close lightbox"></a>
+          <div class="lightbox-dialog">
+            <a href="#lookbook" class="lightbox-close" aria-label="Close">✕</a>
+            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1600&auto=format&fit=crop&q=85" alt="Editorial Look 02 Full View">
+            <div class="lightbox-info">
+              <span class="mono-label">LOOK 02 // BERLIN U-BAHN PLATFORM</span>
+              <h3 class="look-heading">SUBTERRANEAN DRIFT</h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="look-3" class="lightbox">
+          <a href="#lookbook" class="lightbox-backdrop" aria-label="Close lightbox"></a>
+          <div class="lightbox-dialog">
+            <a href="#lookbook" class="lightbox-close" aria-label="Close">✕</a>
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1600&auto=format&fit=crop&q=85" alt="Editorial Look 03 Full View">
+            <div class="lightbox-info">
+              <span class="mono-label">LOOK 03 // STUDIO ARCHIVE SILHOUETTE</span>
+              <h3 class="look-heading">KINETIC DRAPE</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story / About -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrapper">
+          <span class="about-tag">ATELIER // BERLIN</span>
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&auto=format&fit=crop&q=80" alt="Design atelier" class="about-image" loading="lazy">
+        </div>
+        <div class="about-text-column">
+          <div class="section-header">
+            <span class="section-subtitle">THE MANIFESTO // ETHOS</span>
+            <h2 class="section-title">ARCHITECTURAL REBELLION AT STREET LEVEL.</h2>
+          </div>
+          <p class="about-desc">Founded in 2024, <strong>VØID // DISTRICT</strong> operates at the convergence of structural architecture, industrial utility, and brutalist counter-culture. Every capsule is developed in small runs between Berlin and Tokyo.</p>
+          <blockquote class="about-quote">"We construct garments the way engineers build bridges: calculated tolerances, custom loopback cottons, and unapologetic presence."</blockquote>
+          <div class="about-metrics">
+            <div><span class="metric-num">480g</span><span class="mono-muted">Heavy Fleece</span></div>
+            <div><span class="metric-num">250</span><span class="mono-muted">Units Per Run</span></div>
+            <div><span class="metric-num">100%</span><span class="mono-muted">Recycled Tech</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / Info Accordion Section (<details> & <summary>) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">SPECIFICATIONS // FAQ</span>
+          <h2 class="section-title">LOGISTICS & ARCHIVE CARE</h2>
+        </div>
+        <div class="faq-accordion">
+          <details class="faq-item">
+            <summary class="faq-summary">GLOBAL COURIER & DISPATCH <span class="faq-icon">+</span></summary>
+            <div class="faq-content">
+              <p>All capsules are dispatched from our Tokyo and Berlin ateliers via carbon-neutral express courier. Orders over $200 receive complimentary express tracking. Customs duties and import fees are pre-calculated at checkout with zero clearance delays.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary">ARCHIVE RETURN PROTOCOL <span class="faq-icon">+</span></summary>
+            <div class="faq-content">
+              <p>Due to the limited 250-unit nature of each release, items may be returned within 14 days of delivery in pristine, unwashed condition with all original security ribbons and numbered certificates attached.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary">SIZING & METRIC TOLERANCES <span class="faq-icon">+</span></summary>
+            <div class="faq-content">
+              <p>Garments feature an intentional oversized architectural silhouette. Select your standard true-to-size fit for the intended runway drape, or choose one size down for a closer, tailored streetwear posture.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary">GARMENT CARE & FABRIC PRESERVATION <span class="faq-icon">+</span></summary>
+            <div class="faq-content">
+              <p>Wash heavyweight 480GSM loopback fleece inside out in cold water (30°C max) using mild detergent. Air dry flat away from direct sunlight. Do not tumble dry. Iron garments on the reverse face to protect technical finishes.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Newsletter (HTML Only) -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="newsletter-card">
+        <div>
+          <span class="mono-label">// VIP ACCESS</span>
+          <h2 class="newsletter-title">JOIN THE DISTRICT SYNDICATE</h2>
+          <p class="newsletter-desc">Receive drop alerts 1 hour before public release. Zero spam.</p>
+        </div>
+        <form class="newsletter-form" action="#contact" method="get">
+          <input type="email" class="newsletter-input" placeholder="ENTER EMAIL..." required>
+          <button type="submit" class="btn btn-primary">ACCESS →</button>
+        </form>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo">VØID<span class="brand-dot">.</span>DISTRICT</div>
+          <p class="footer-desc">Autonomous technical streetwear label. Designed between Tokyo and Berlin.</p>
+        </div>
+        <div>
+          <h3 class="footer-title">// ARCHIVE</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li><li><a href="#shop">Capsule 004</a></li>
+            <li><a href="#lookbook">Lookbook</a></li><li><a href="#about">Manifesto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">// LOGISTICS</h3>
+          <ul class="footer-links">
+            <li><a href="#faq">Shipping & Dispatch</a></li><li><a href="#faq">Returns Protocol</a></li>
+            <li><a href="#faq">Sizing Guide</a></li><li><a href="#faq">Garment Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">// SOCIAL</h3>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 VØID DISTRICT STUDIOS INC.</span>
+        <a href="#home" class="mono-muted">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
